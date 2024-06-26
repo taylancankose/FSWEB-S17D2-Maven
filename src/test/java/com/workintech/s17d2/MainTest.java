@@ -1,9 +1,8 @@
 package com.workintech.s17d2;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.workintech.s17d2.model.*;
 import com.workintech.s17d2.rest.DeveloperController;
-import com.workintech.s17d2.tax.DeveloperTax;
+import model.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +11,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.core.env.Environment;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import tax.DeveloperTax;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
